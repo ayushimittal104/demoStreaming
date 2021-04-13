@@ -1,12 +1,73 @@
-body {
+*{
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0;
+  border: none;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+header{
+  background-color: blue;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 10%;
+  align-items: center;
+}
 
+.trial{
+  padding: 6px 7px;
+  background-color: black;
+}
+footer{
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  bottom: 0px;
+  width: 100%;
+  padding: 20px 10%;
+}
+.footer1{
+  display: flex;
+  flex-wrap: wrap;
+}
+.pd010{
+  padding:0 10px
+}
+.pdr5{
+  padding-right: 10px;
+}
+.m10{
+  margin: 10px 0;
+}
+.footer1 div{
+  align-self: center;
+  text-align: center;
+  position: relative;
+}
+.footer1 div:not(:last-child):after {
+  content: '';
+  height: 40%; 
+  width: 1px;
+  position: absolute;
+  right: 0;
+  top:35%;
+  background-color: #ffffff;
+}
+.icons{
+  justify-content: space-between;
+    margin: 10px 0;
+}
+.df{
+  display: flex;
+  flex-wrap: wrap;
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
